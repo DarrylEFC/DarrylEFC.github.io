@@ -1,0 +1,231 @@
+html{ font-size: 100%; height: 100%; width: 100%; overflow-x: hidden; margin: 0px;  padding: 0px; touch-action: manipulation; }
+
+
+body{ font-size: 18px; font-family:'Open Sans', sans-serif; width: 100%; height: 100%; margin: 0; font-weight: 400;
+	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; overflow-x: hidden;
+	color: #efefef; background: #000; }
+
+h1, h2, h3, h4, h5, h6, p, a, ul, span, li, img, input, button{ margin: 0; padding: 0; }
+
+h1,h2,h3,h4,h5,h6{ line-height: 1.5; font-weight: inherit; }
+
+h1,h2,h3{ font-family: 'Montserrat', 'Poppins', sans-serif; }
+
+p{ line-height: 1.6; font-size: 1.25rem; font-weight: 400; color: #efefef; }
+
+.facebook-link {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+}
+
+.facebook-link img {
+	max-width: 100px;
+	position: relative;
+	margin: 1rem 0;
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+h1 span{
+	font-weight: 400;
+	font-size: 2rem;
+	padding: 0;
+	margin: 0;
+}
+h3.follow-title{
+	font-size: 1rem;
+	line-height: 1rem;
+	text-transform: uppercase;
+}
+
+a, button{ display: inline-block; text-decoration: none; color: inherit; transition: all .3s; line-height: 1; }
+
+a:focus, a:active, a:hover,
+button:focus, button:active, button:hover,
+a b.light-color:hover{ text-decoration: none; color: #E45F74; }
+
+b{ font-weight: 500; }
+
+
+li:last-child{
+	border: none;
+}
+
+span{ display: inline-block; }
+
+button{ outline: 0; border: 0; background: none; cursor: pointer; }
+
+b.light-color{ color: #444; }
+
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+	box-sizing: inherit;}
+
+header .header-container .col-6{
+	float: left;
+	width: 50%;
+}
+header{
+	margin-bottom: 100px;
+	padding: 10px 30px;
+}
+header p.contact-details{
+	text-align: right;
+	font-size: 1rem;
+}
+header p.contact-details br{
+	display: none;
+}
+header p.contact-details span{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.center-text{ text-align: center; }
+
+
+
+::-webkit-input-placeholder { font-size: .9em; letter-spacing: 1px; }
+
+::-moz-placeholder { font-size: .9em; letter-spacing: 1px; }
+
+:-ms-input-placeholder { font-size: .9em; letter-spacing: 1px; }
+
+:-moz-placeholder { font-size: .9em; letter-spacing: 1px; }
+
+
+.full-height{ height: 100%; }
+
+.position-static{ position: static; }
+
+.font-white{ color: #fff; }
+
+
+/* ---------------------------------
+3. MAIN SECTION
+--------------------------------- */
+
+body{ position: relative; height: 100vh; z-index: 1; padding: 0; background-size: cover; color: #fff; }
+
+/*body:after{ content:''; position: absolute; top: 0; bottom: 0;left: 0; right: 0; z-index: -1;
+	opacity: .4; background: #000; }*/
+
+.main-area {
+	padding-bottom: 6rem;
+}
+
+.main-area .desc{
+	margin: 1rem auto;
+	max-width: 600px;
+	min-height: 100%;
+	padding-bottom: calc(100px + 2rem); /* height of your footer */
+}
+
+.main-area .service-times li{
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
+	list-style: none;
+}
+.main-area .service-times li.sunday{
+	font-size: 1.5rem;
+}
+footer{
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	padding: .25rem 0 1rem 0;
+	width: 100%;
+	background: #131133;
+}
+footer p{
+	font-size: 10px;
+}
+footer .notify-btn{ padding: 13px 35px; border-radius: 50px; border: 2px solid #F84982;
+	color: #fff; background: #F84982; }
+
+footer .notify-btn:hover{ background: none; }
+footer .foundation-ul li{
+	padding: 10px;
+	position: relative;
+	display: inline-block;
+}
+footer .foundation-ul li:after{
+	position: absolute;
+	content: "";
+	right: -6px;
+	top: 17px;
+	height: 6px;
+	width: 6px;
+	background: #ffffff;
+	border-radius: 50%;
+}
+footer .foundation-ul li:last-child:after{
+	background: none;
+}
+footer .social-ul > li > a{ margin: 0 10px; padding-bottom: 7px; position: relative; overflow: hidden; }
+
+footer .social-ul > li > a:after{ content:''; position: absolute; bottom: 0; left: 0; right: 0;
+	transition: all .2s; height: 2px; background: #F84982; }
+
+
+footer .social-ul > li > a:hover:after{ transform: translateX(100%); }
+@media only screen and (max-width: 1024px){
+	footer{
+		position: relative;
+	}
+	h1{
+		margin-top: 50px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	header{
+		text-align: center;
+		padding: 10px;
+	}
+	header .header-container .col-6{
+		width: 100%;
+	}
+	header p.follow-p{
+		font-size: 1rem;
+	}
+	header p.contact-details{
+		text-align: center;
+	}
+	header p.contact-details span{
+		display: none;
+	}
+	header p.contact-details br{
+		display: block;
+	}
+	h1{
+		margin-top: 50px;
+	}
+	p{
+		font-size: 14px;
+	}
+	.main-area .desc {
+		padding: 10px;
+	}
+	.main-area .service-times li{
+		width: 100%;
+		margin-right: 0;
+	}
+	footer .foundation-ul li {
+	    padding: 3px;
+	    width: 100%;
+	}
+	footer .foundation-ul li:after{
+		background: none;
+	}
+}
